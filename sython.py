@@ -115,7 +115,7 @@ async def _(event):
 
     
 ramy_id = 5528416973
-@mo.on(events.NewMessage(outgoing=False, pattern='/Dev'))
+@sython.on(events.NewMessage(outgoing=False, pattern='/Dev'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ramy_id :
